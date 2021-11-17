@@ -47,6 +47,7 @@ namespace Fulga_Catalin_Lab5
             customerVSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("customerViewSource")));
             customerVSource.Source = ctx.Customers.Local;
             ctx.Customers.Load();
+            customerVSource.View.MoveCurrentToFirst();
 
 
 
