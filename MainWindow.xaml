@@ -162,7 +162,7 @@
             <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100">
                 <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="btnSave_Click">
                     <Button.Style>
-                        <Style TargetType="{x:Type Button}">
+                       <Style TargetType="{x:Type Button}" BasedOn="{StaticResource gbActions}">
                             <Setter Property="IsEnabled" Value="false" />
                             <Style.Triggers>
                                 <!--Butonul Save va fi inactiv daca exista erori de validare -->
